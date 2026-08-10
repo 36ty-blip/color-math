@@ -22,7 +22,9 @@ classifiers = [
 ]
 dependencies = []
 
-# Add [project.urls] after the public repository URL is known.
+[project.urls]
+Repository = "https://github.com/36ty-blip/color-math"
+Issues = "https://github.com/36ty-blip/color-math/issues"
 
 [project.scripts]
 color-math = "color_math.main:main"

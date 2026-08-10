@@ -95,8 +95,7 @@ def convert_text(text: str) -> str:
     Convert an entire document.
 
     Handles:
-      - inline math lines
-      - multiline $$ ... $$ math blocks
+      - single-line and multiline $$ ... $$ math blocks
       - normal text passthrough
     """
 
