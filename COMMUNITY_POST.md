@@ -16,13 +16,15 @@ $$
 
 The output keeps every original LaTeX character and only inserts color wrappers around recognized ranges. It colors the main expression, derivative stages, chain terms, relations, and multiplication markers separately; undo restores the exact input. Markdown code, TeX comments, `\verb` payloads, and prose outside display math are protected.
 
-Repository: **[replace this text with the public GitHub URL before posting]**
+Repository: **https://github.com/36ty-blip/obsidian-color-math**
 
 Run it locally with:
 
 ```bash
+git clone https://github.com/36ty-blip/obsidian-color-math.git
+cd obsidian-color-math
 python -m pip install .
-python -m color_math --file tests/original/derivatives.md
+color-math --file tests/original/derivatives.md
 ```
 
 In-place conversion preserves the note's UTF-8 BOM and newline style and uses an atomic replacement, while preview mode leaves the file untouched.
@@ -33,4 +35,4 @@ It includes regression fixtures for straightforward, matrix/tensor, and deeply n
 2. Which LaTeX patterns should be prioritized next.
 3. Whether a native plugin version would be worth building.
 
-Everything runs locally; it makes no network requests or use of external AI services.
+Everything runs locally; it makes no network requests and uses no external AI services.

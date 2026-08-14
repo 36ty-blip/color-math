@@ -1,20 +1,20 @@
 [build-system]
-requires = ["setuptools>=68"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "obsidian-color-math"
-version = "0.1.0"
-description = "A local semantic LaTeX colorizer for Obsidian Markdown notes."
+version = "0.1.1"
+description = "Automatically apply semantic colors to LaTeX and MathJax equations in Obsidian Markdown."
 readme = "README.md"
 requires-python = ">=3.10"
-license = { file = "LICENSE" }
+license = "MIT"
+license-files = ["LICENSE"]
 authors = [{ name = "Aditya" }]
-keywords = ["obsidian", "latex", "math", "markdown", "colorizer"]
+keywords = ["obsidian", "latex", "mathjax", "math", "equations", "markdown", "colorizer"]
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Environment :: Console",
-    "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3 :: Only",
@@ -23,8 +23,9 @@ classifiers = [
 dependencies = []
 
 [project.urls]
-Repository = "https://github.com/36ty-blip/color-math"
-Issues = "https://github.com/36ty-blip/color-math/issues"
+Repository = "https://github.com/36ty-blip/obsidian-color-math"
+Issues = "https://github.com/36ty-blip/obsidian-color-math/issues"
+"Release Notes" = "https://github.com/36ty-blip/obsidian-color-math/releases"
 
 [project.scripts]
 color-math = "color_math.main:main"

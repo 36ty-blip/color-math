@@ -30,5 +30,7 @@ jobs:
         run: python -m tests.self_test
       - name: Check installed dependencies
         run: python -m pip check
-      - name: Build wheel
-        run: python -m pip wheel --no-deps --wheel-dir wheelhouse .
+      - name: Build wheel and source distribution
+        run: |
+          python -m pip install build
+          python -m build
